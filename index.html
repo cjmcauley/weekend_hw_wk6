@@ -17,17 +17,23 @@
 
       <div class="form-item">
         <label for="club" class="primary">Club:</label>
-        <input type="text" id="club" required/>
+        <select id="club" required>
+          <option value="Arsenal">Arsenal</option>
+          <option value="Liverpool">Liverpool</option>
+          <option value="Manchester City">Manchester City</option>
+          <option value="Tottenham">Tottenham</option>
+        </select>
       </div>
 
       <div class="form-item">
         <label for="goals" class="primary">Total Goals:</label>
         <input type="number" id="goals" name="goals" min="0" max="40" required/>
       </div>
-
+      <div class="form-item">
+        <input type="submit" value="Add Player"/>
+      </div>
     </div>
 
-    <input type="submit" value="Add Player"/>
 
   </form>
   <h1>Premier League Top Scorers</h1>

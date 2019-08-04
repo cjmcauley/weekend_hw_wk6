@@ -9,17 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerGoals = event.target.goals.value;
 
     const playerDetails = document.createElement('div');
+    playerDetails.setAttribute('id', `${playerTeam.replace(/\s+/g, '').toLowerCase()}`);
 
     const player = document.createElement('h2');
-    player.textContent = playerName;
+    player.textContent = `Name: ${playerName}`;
+    player.classList.add(`${playerTeam.replace(/\s+/g, '').toLowerCase()}`);
     playerDetails.appendChild(player);
 
-    const club = document.createElement('h3');
-    club.textContent = playerTeam;
+    const club = document.createElement('h2');
+    club.textContent = `Club: ${playerTeam}`;
+    club.classList.add(`${playerTeam.replace(/\s+/g, '').toLowerCase()}`);
     playerDetails.appendChild(club);
 
-    const goals = document.createElement('p');
-    goals.textContent = playerGoals;
+    const goals = document.createElement('h2');
+    goals.textContent = `Goals: ${playerGoals}`;
+    goals.classList.add(`${playerTeam.replace(/\s+/g, '').toLowerCase()}`);
     playerDetails.appendChild(goals);
 
     topScorers = document.querySelector('#top-scorers');

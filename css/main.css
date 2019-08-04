@@ -1,0 +1,30 @@
+.form-wrapper{
+  display: flex;
+}
+
+.form-item{
+  padding-left: 12px;
+}
+#liverpool{
+  color: #FFFFFF;
+  background-color: #C8102E;
+  border-color: #F6EB61;
+  border-style: solid;
+}
+#tottenham{
+  border-color: #132257;
+  border-style: solid;
+  color: #132257;
+}
+#manchestercity{
+  color: #FFFFFF;
+  background-color: #6CABDD;
+  border-color: #1C2C5B;
+  border-style: solid;
+}
+#arsenal{
+  color: #FFFFFF;
+  background-color: #EF0107;
+  border-color: #9C824A;
+  border-style: solid;
+}
