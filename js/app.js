@@ -26,12 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     goals.classList.add(`${playerTeam.replace(/\s+/g, '').toLowerCase()}`);
     playerDetails.appendChild(goals);
 
-    topScorers = document.querySelector('#top-scorers');
+    const topScorers = document.querySelector('#top-scorers');
     topScorers.appendChild(playerDetails);
 
     form.reset();
 
   });
 
+  const deleteAll = document.querySelector('#delete-all');
+  deleteAll.addEventListener('click',(event) => {
+    const topScorersRemove = document.querySelector('#top-scorers');
+    topScorersRemove.innerHTML = '';
+  });
 
 });
